@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quiz App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="home-box custom-box">
+        <h3>Instruction:</h3>
+        <p>Total number of questions: <span class="total-question"></span></p>
+        <p>All the Best!!</p>
+        <button type="button" class="btn" onclick="startQuiz()">Start Quiz</button>
+    </div>
+    <div class="quiz-box custom-box hide">
+        <div class="question-number"></div>
+        <div class="question-text"></div>
+        <div class="option-container"></div>
+        <div class="button-container">
+            <button id="backButton" class="next-question-btn1">Back</button>
+            <button id="nextButton" class="next-question-btn2">Next</button>
+        </div>
+        <div class="answers-indicator"></div>
+    </div>
+    <div class="result-box custom-box hide">
+        <h1>Quiz Result</h1>
+        <table>
+            <tr>
+                <td>Total Questions</td>
+                <td><span id="total-questions"></span></td>
+            </tr>
+            <tr>
+                <td>Attempt</td>
+                <td><span id="attempt"></span></td>
+            </tr>
+            <tr>
+                <td>Correct</td>
+                <td><span id="correct"></span></td>
+            </tr>
+            <tr>
+                <td>Wrong</td>
+                <td><span id="wrong"></span></td>
+            </tr>
+            <tr>
+                <td>Percentage</td>
+                <td><span id="percentage"></span></td>
+            </tr>
+            <tr>
+                <td>Your Total Score</td>
+                <td><span id="total-score"></span></td>
+            </tr>
+        </table>
+        <button type="button" class="btn" onclick="tryAgainQuiz()">Try Again</button>
+        <button type="button" class="btn" onclick="goToHome()">Go to Home</button>
+    </div>
+    <script src="Quiz.js"></script>
+    <script src="questions.js"></script>
+</body>
+</html>
